@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.references-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.reference-item {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.reference-item:hover {
+    background-color: #e8e8e8;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.degree {
+    font-size: 12px;
+    color: #000000;
+    vertical-align: super;
+}
+
+.title {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+.institution {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.address {
+    font-size: 13px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.contact {
+    font-size: 13px;
+    color: #000000;
+}
+
+.email {
+    color: #1100fe;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+.phone {
+    color: #018438;
+}
+
+@media (max-width: 768px) {
+    .references-grid {
+        grid-template-columns: 1fr;
+    }
+}
